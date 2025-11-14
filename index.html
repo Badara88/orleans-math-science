@@ -4,10 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Orléans Math Science (OMS)</title>
-  <!-- Tailwind via CDN for quick static site (no build) -->
+  <!-- Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-50 text-gray-900">
+
+  <!-- HEADER -->
   <header class="bg-white shadow-sm">
     <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
       <div class="flex items-center gap-3">
@@ -26,6 +29,7 @@
     </div>
   </header>
 
+  <!-- HERO -->
   <main class="pt-12 pb-16">
     <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div>
@@ -50,22 +54,10 @@
         <p class="text-sm text-gray-600 mt-2">1er cours offert + diagnostic gratuit</p>
 
         <div class="mt-4 grid gap-3">
-          <div class="flex items-center justify-between">
-            <span class="text-sm">Collège – individuel</span>
-            <strong>25 €/h</strong>
-          </div>
-          <div class="flex items-center justify-between">
-            <span class="text-sm">Lycée – individuel</span>
-            <strong>30 €/h</strong>
-          </div>
-          <div class="flex items-center justify-between">
-            <span class="text-sm">Etudes sup. – individuel</span>
-            <strong>35 €/h</strong>
-          </div>
-          <div class="flex items-center justify-between">
-            <span class="text-sm">Groupe (3–5 élèves)</span>
-            <strong>15–20 €/élève</strong>
-          </div>
+          <div class="flex items-center justify-between"><span class="text-sm">Collège – individuel</span><strong>25 €/h</strong></div>
+          <div class="flex items-center justify-between"><span class="text-sm">Lycée – individuel</span><strong>30 €/h</strong></div>
+          <div class="flex items-center justify-between"><span class="text-sm">Etudes sup. – individuel</span><strong>35 €/h</strong></div>
+          <div class="flex items-center justify-between"><span class="text-sm">Groupe (3–5 élèves)</span><strong>15–20 €/élève</strong></div>
         </div>
 
         <a href="#contact" class="block mt-6 text-center bg-indigo-600 text-white px-3 py-2 rounded-md">Prendre RDV</a>
@@ -73,19 +65,23 @@
     </div>
   </main>
 
+  <!-- SERVICES -->
   <section id="services" class="py-12 bg-gray-50">
     <div class="max-w-5xl mx-auto px-6">
       <h3 class="text-2xl font-bold">Nos services</h3>
       <p class="mt-2 text-gray-600">Approche personnalisée, bilan initial, objectifs clairs et suivi mensuel.</p>
+
       <div class="mt-6 grid md:grid-cols-3 gap-6">
         <div class="bg-white p-6 rounded-lg shadow">
           <h4 class="font-semibold">Cours individuels</h4>
           <p class="text-sm text-gray-600 mt-2">Séances sur mesure pour combler les lacunes et progresser rapidement.</p>
         </div>
+
         <div class="bg-white p-6 rounded-lg shadow">
           <h4 class="font-semibold">Petits groupes</h4>
           <p class="text-sm text-gray-600 mt-2">Ateliers intensifs et sessions de révision en petits groupes.</p>
         </div>
+
         <div class="bg-white p-6 rounded-lg shadow">
           <h4 class="font-semibold">Préparation examens</h4>
           <p class="text-sm text-gray-600 mt-2">Méthodologie et entraînement aux exercices type Bac / Brevet / Concours.</p>
@@ -94,15 +90,16 @@
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about" class="py-12">
     <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
       <div>
         <h3 class="text-2xl font-bold">À propos de OMS</h3>
-        <p class="mt-3 text-gray-600">Je suis Badara Dieng, professeur en mathématiques et sciences. Fort d'une expérience de terrain et d'une méthode pédagogique adaptée, je propose un accompagnement concret pour aider chaque élève à atteindre ses objectifs.</p>
+        <p class="mt-3 text-gray-600">Je suis Badara Dieng, professeur en mathématiques et sciences. Fort d'une expérience de terrain et d'une méthode pédagogique adaptée, j'aide chaque élève à atteindre ses objectifs.</p>
         <ul class="mt-4 text-sm text-gray-700">
-          <li>• Diplôme Master 2 en Physique-Chimie des Matériaux</li>
+          <li>• Master 2 Physique-Chimie des Matériaux</li>
           <li>• Diplôme Ingénieur de Données</li>
-          <li>• Expérience pédagogique depuis 2018</li>
+          <li>• Professeur depuis 2018</li>
           <li>• Approche bienveillante et structurée</li>
         </ul>
       </div>
@@ -111,35 +108,29 @@
         <h4 class="font-semibold">Pourquoi choisir OMS ?</h4>
         <p class="mt-2 text-sm text-gray-600">Résultats mesurables, suivi personnalisé et flexibilité (présentiel/visio).</p>
         <div class="mt-4 space-y-2 text-sm">
-          <div class="flex items-center justify-between">
-            <span>Diagnostic initial</span>
-            <span class="font-semibold">✔️</span>
-          </div>
-          <div class="flex items-center justify-between">
-            <span>Plan de progression</span>
-            <span class="font-semibold">✔️</span>
-          </div>
-          <div class="flex items-center justify-between">
-            <span>Suivi mensuel</span>
-            <span class="font-semibold">✔️</span>
-          </div>
+          <div class="flex items-center justify-between"><span>Diagnostic initial</span><span class="font-semibold">✔️</span></div>
+          <div class="flex items-center justify-between"><span>Plan de progression</span><span class="font-semibold">✔️</span></div>
+          <div class="flex items-center justify-between"><span>Suivi mensuel</span><span class="font-semibold">✔️</span></div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- TESTIMONIALS -->
   <section id="testimonials" class="py-12 bg-gray-50">
     <div class="max-w-5xl mx-auto px-6">
       <h3 class="text-2xl font-bold">Témoignages</h3>
       <div class="mt-6 grid md:grid-cols-3 gap-4">
         <blockquote class="bg-white p-4 rounded-lg shadow">
           <p class="text-sm text-gray-700">"Grâce à OMS, mon fils a gagné 4 points en maths au bac blanc."</p>
-          <footer class="mt-3 text-xs text-gray-500">— Parent, Lycée </footer>
+          <footer class="mt-3 text-xs text-gray-500">— Parent, Lycée</footer>
         </blockquote>
+
         <blockquote class="bg-white p-4 rounded-lg shadow">
           <p class="text-sm text-gray-700">"Excellente pédagogie, explications claires et patientes."</p>
-          <footer class="mt-3 text-xs text-gray-500">— Élève L1</footer>
+          <footer class="mt-3 text-xs text-gray-500">— Étudiant L1</footer>
         </blockquote>
+
         <blockquote class="bg-white p-4 rounded-lg shadow">
           <p class="text-sm text-gray-700">"Méthode efficace pour la physique, je recommande."</p>
           <footer class="mt-3 text-xs text-gray-500">— Parent, Collège</footer>
@@ -148,50 +139,46 @@
     </div>
   </section>
 
-  <section id="contact" class="py-12">
-    <div class="max-w-4xl mx-auto px-6">
-      <h3 class="text-2xl font-bold">Contact</h3>
-      <p class="mt-2 text-gray-600">Contactez-moi pour un diagnostic gratuit ou pour réserver un cours.</p>
-      <div class="mt-6 grid md:grid-cols-2 gap-6">
-        <form class="space-y-4">
-          <div>
-            <label class="block text-sm font-medium">Nom</label>
-            <input class="mt-1 block w-full border-gray-200 rounded-md shadow-sm" type="text" placeholder="Nom complet" />
-          </div>
-          <div>
-            <label class="block text-sm font-medium">Email</label>
-            <input class="mt-1 block w-full border-gray-200 rounded-md shadow-sm" type="email" placeholder="email@exemple.com" />
-          </div>
-          <div>
-            <label class="block text-sm font-medium">Téléphone</label>
-            <input class="mt-1 block w-full border-gray-200 rounded-md shadow-sm" type="tel" placeholder="06 00 00 00 00" />
-          </div>
-          <div>
-            <label class="block text-sm font-medium">Message</label>
-            <textarea class="mt-1 block w-full border-gray-200 rounded-md shadow-sm" rows="4" placeholder="Expliquez vos besoins..."></textarea>
-          </div>
-          <div>
-            <button type="button" class="bg-indigo-600 text-white px-4 py-2 rounded-md">Envoyer</button>
-          </div>
-        </form>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h4 class="font-semibold">Infos pratiques</h4>
-          <p class="text-sm text-gray-600 mt-2">Badara Dieng — Orléans</p>
-          <p class="text-sm text-gray-600">Tél : <a href="tel:+33600000000" class="text-indigo-600">07 53 84 64 45</a></p>
-          <p class="text-sm text-gray-600">Email : <a href="mailto:badaradieng1988@gmail.com" class="text-indigo-600">badaradieng1988@gmail.com</a></p>
-          <div class="mt-4">
-            <a href="https://wa.me/ 33753846445" class="inline-block bg-green-500 text-white px-4 py-2 rounded-md">WhatsApp</a>
-          </div>
-        </div>
-      </div>
+  <!-- CONTACT (Formspree version) -->
+  <section id="contact" style="background-color:#f9fafb; padding:60px 20px;">
+    <div style="max-width:900px; margin:auto;">
+      <h2 style="text-align:center; font-size:28px; font-weight:700; color:#1E293B;">
+        Contactez-nous
+      </h2>
+      <p style="text-align:center; color:#475569; margin-top:8px;">
+        Réservez un cours ou demandez un diagnostic gratuit.
+      </p>
+
+      <form action="https://formspree.io/f/xldadezv" method="POST" style="background-color:#fff; padding:30px; margin-top:30px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+        
+        <label for="name" style="display:block; font-weight:600; color:#1E293B; margin-top:10px;">Nom complet</label>
+        <input type="text" name="Nom" id="name" required placeholder="Votre nom complet" style="width:100%; padding:10px; border:1px solid #CBD5E1; border-radius:8px; margin-top:6px;">
+
+        <label for="email" style="display:block; font-weight:600; color:#1E293B; margin-top:15px;">Email</label>
+        <input type="email" name="Email" id="email" required placeholder="email@exemple.com" style="width:100%; padding:10px; border:1px solid #CBD5E1; border-radius:8px; margin-top:6px;">
+
+        <label for="phone" style="display:block; font-weight:600; color:#1E293B; margin-top:15px;">Téléphone</label>
+        <input type="tel" name="Téléphone" id="phone" placeholder="06 00 00 00 00" style="width:100%; padding:10px; border:1px solid #CBD5E1; border-radius:8px; margin-top:6px;">
+
+        <label for="message" style="display:block; font-weight:600; color:#1E293B; margin-top:15px;">Message</label>
+        <textarea name="Message" id="message" rows="5" required placeholder="Expliquez vos besoins..." style="width:100%; padding:10px; border:1px solid #CBD5E1; border-radius:8px; margin-top:6px;"></textarea>
+
+        <input type="hidden" name="_redirect" value="https://orleansmathscience.fr/merci.html">
+
+        <button type="submit" style="margin-top:20px; background-color:#2563EB; color:#fff; border:none; padding:12px 20px; border-radius:8px; font-size:16px; font-weight:600; cursor:pointer; width:100%;">
+          Envoyer
+        </button>
+      </form>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="bg-white border-t mt-12">
     <div class="max-w-5xl mx-auto px-6 py-6 text-sm text-gray-500 flex flex-col md:flex-row justify-between">
       <div>© Orléans Math Science — Tous droits réservés</div>
       <div>Conception : Badara Dieng</div>
     </div>
   </footer>
+
 </body>
 </html>
