@@ -140,45 +140,129 @@
   </section>
 
   <!-- CONTACT (Formspree version) -->
-  <section id="contact" style="background-color:#f9fafb; padding:60px 20px;">
-    <div style="max-width:900px; margin:auto;">
-      <h2 style="text-align:center; font-size:28px; font-weight:700; color:#1E293B;">
-        Contactez-nous
-      </h2>
-      <p style="text-align:center; color:#475569; margin-top:8px;">
-        Réservez un cours ou demandez un diagnostic gratuit.
-      </p>
+  <section id="contact" class="py-12">
+  <div class="max-w-4xl mx-auto px-6">
+    <h3 class="text-2xl font-bold">Réserver un cours</h3>
+    <p class="mt-2 text-gray-600">Remplissez le formulaire ci-dessous et je vous recontacte rapidement.</p>
 
-      <form action="https://formspree.io/f/xldadezv" method="POST" style="background-color:#fff; padding:30px; margin-top:30px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-        
-        <label for="name" style="display:block; font-weight:600; color:#1E293B; margin-top:10px;">Nom complet</label>
-        <input type="text" name="Nom" id="name" required placeholder="Votre nom complet" style="width:100%; padding:10px; border:1px solid #CBD5E1; border-radius:8px; margin-top:6px;">
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
 
-        <label for="email" style="display:block; font-weight:600; color:#1E293B; margin-top:15px;">Email</label>
-        <input type="email" name="Email" id="email" required placeholder="email@exemple.com" style="width:100%; padding:10px; border:1px solid #CBD5E1; border-radius:8px; margin-top:6px;">
+      <!-- FORMULAIRE FORMSpree -->
+      <form action="https://formspree.io/f/xldadezv" method="POST" class="space-y-4">
 
-        <label for="phone" style="display:block; font-weight:600; color:#1E293B; margin-top:15px;">Téléphone</label>
-        <input type="tel" name="Téléphone" id="phone" placeholder="06 00 00 00 00" style="width:100%; padding:10px; border:1px solid #CBD5E1; border-radius:8px; margin-top:6px;">
-
-        <label for="message" style="display:block; font-weight:600; color:#1E293B; margin-top:15px;">Message</label>
-        <textarea name="Message" id="message" rows="5" required placeholder="Expliquez vos besoins..." style="width:100%; padding:10px; border:1px solid #CBD5E1; border-radius:8px; margin-top:6px;"></textarea>
-
+        <!-- Redirection vers merci.html -->
         <input type="hidden" name="_redirect" value="https://orleansmathscience.fr/merci.html">
 
-        <button type="submit" style="margin-top:20px; background-color:#2563EB; color:#fff; border:none; padding:12px 20px; border-radius:8px; font-size:16px; font-weight:600; cursor:pointer; width:100%;">
-          Envoyer
-        </button>
+        <div>
+          <label class="block text-sm font-medium">Nom complet</label>
+          <input name="Nom" required class="mt-1 block w-full border-gray-200 rounded-md shadow-sm" type="text" placeholder="Votre nom" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Email</label>
+          <input name="Email" required class="mt-1 block w-full border-gray-200 rounded-md shadow-sm" type="email" placeholder="email@exemple.com" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Téléphone</label>
+          <input name="Téléphone" required class="mt-1 block w-full border-gray-200 rounded-md shadow-sm" type="tel" placeholder="07 00 00 00 00" />
+        </div>
+
+        <!-- Matière -->
+        <div>
+          <label class="block text-sm font-medium">Matière</label>
+          <select name="Matière" required class="mt-1 block w-full border-gray-200 rounded-md shadow-sm">
+            <option value="">Choisir…</option>
+            <option>Mathématiques</option>
+            <option>Physique</option>
+            <option>Chimie</option>
+            <option>Maths + Physique</option>
+            <option>Maths + Physique + Chimie</option>
+          </select>
+        </div>
+
+        <!-- Niveau -->
+        <div>
+          <label class="block text-sm font-medium">Niveau scolaire</label>
+          <select name="Niveau" required class="mt-1 block w-full border-gray-200 rounded-md shadow-sm">
+            <option value="">Choisir…</option>
+            <option>Collège</option>
+            <option>Seconde</option>
+            <option>Première</option>
+            <option>Terminale</option>
+            <option>Études supérieures</option>
+          </select>
+        </div>
+
+        <!-- Mode -->
+        <div>
+          <label class="block text-sm font-medium">Mode du cours</label>
+          <select name="Mode" required class="mt-1 block w-full border-gray-200 rounded-md shadow-sm">
+            <option value="">Choisir…</option>
+            <option>À domicile</option>
+            <option>En ligne (visio)</option>
+            <option>Mixte (selon disponibilités)</option>
+          </select>
+        </div>
+
+        <!-- Jour -->
+        <div>
+          <label class="block text-sm font-medium">Jour préféré</label>
+          <select name="Jour préféré" required class="mt-1 block w-full border-gray-200 rounded-md shadow-sm">
+            <option value="">Choisir…</option>
+            <option>Lundi</option>
+            <option>Mardi</option>
+            <option>Mercredi</option>
+            <option>Jeudi</option>
+            <option>Vendredi</option>
+            <option>Samedi</option>
+            <option>Dimanche</option>
+          </select>
+        </div>
+
+        <!-- Créneau -->
+        <div>
+          <label class="block text-sm font-medium">Créneau horaire souhaité</label>
+          <select name="Créneau" required class="mt-1 block w-full border-gray-200 rounded-md shadow-sm">
+            <option value="">Choisir…</option>
+            <option>Matin (8h-12h)</option>
+            <option>Après-midi (13h-17h)</option>
+            <option>Soir (17h-21h)</option>
+          </select>
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label class="block text-sm font-medium">Message</label>
+          <textarea name="Message" class="mt-1 block w-full border-gray-200 rounded-md shadow-sm" rows="4" placeholder="Expliquez vos besoins..."></textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 w-full">
+            Envoyer la demande
+          </button>
+        </div>
       </form>
-    </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-white border-t mt-12">
-    <div class="max-w-5xl mx-auto px-6 py-6 text-sm text-gray-500 flex flex-col md:flex-row justify-between">
-      <div>© Orléans Math Science — Tous droits réservés</div>
-      <div>Conception : Badara Dieng</div>
-    </div>
-  </footer>
+      <!-- Info pratique -->
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h4 class="font-semibold">Infos pratiques</h4>
+        <p class="text-sm text-gray-600 mt-2">Badara Dieng — Orléans</p>
 
-</body>
-</html>
+        <p class="text-sm text-gray-600">Tél : 
+          <a href="tel:+33753846445" class="text-indigo-600">07 53 84 64 45</a>
+        </p>
+
+        <p class="text-sm text-gray-600">Email : 
+          <a href="mailto:badaradieng1988@gmail.com" class="text-indigo-600">badaradieng1988@gmail.com</a>
+        </p>
+
+        <div class="mt-4">
+          <a href="https://wa.me/33753846445" class="inline-block bg-green-500 text-white px-4 py-2 rounded-md">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
