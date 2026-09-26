@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Symbole atome et flèche Orléans Math Science</title>
+  <g fill="none" stroke="#10375f" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="227" cy="248" rx="68" ry="181"/>
+    <ellipse cx="227" cy="248" rx="68" ry="181" transform="rotate(60 227 248)"/>
+    <ellipse cx="227" cy="248" rx="68" ry="181" transform="rotate(-60 227 248)"/>
+    <path d="M361 342c31 31 48 52 25 72-17 15-42 13-70 7"/>
+    <path d="M133 449c76 11 174-28 275-128 30-29 57-59 79-88"/>
+    <path d="m438 241 54-21-16 57"/>
+  </g>
+  <circle cx="227" cy="248" r="29" fill="#10375f"/>
+</svg>
